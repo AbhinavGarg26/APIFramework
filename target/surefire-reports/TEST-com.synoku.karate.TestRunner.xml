@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="14" failures="0" name="com.synoku.karate.TestRunner" time="0.015" errors="2" skipped="1">
+<testsuite tests="9" failures="0" name="com.synoku.karate.TestRunner" time="0.017" errors="0" skipped="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/abhinavgarg/Documents/java projects/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8209213328332882159.tmp"/>
+    <property name="classworlds.conf" value="/Users/abhinavgarg/Documents/java projects/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf336626950141341829.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/abhinavgarg/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,35 +62,17 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Testing valid GET endpoint" name="Given url &apos;https://jsonplaceholder.typicode.com/todos/1&apos;" time="0.003"/>
-  <testcase classname="Scenario: Testing valid GET endpoint" name="When method GET" time="0"/>
-  <testcase classname="Scenario: Testing valid GET endpoint" name="Then status 200" time="0"/>
-  <testcase classname="Scenario: Testing valid GET endpoint" name="Scenario: Testing valid GET endpoint" time="0"/>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="Given url &apos;https://jsonplaceholder.typicode.com/todos/1&apos;" time="0"/>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="When method GET" time="0"/>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="Then status 200" time="0"/>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="And match $ == { &quot;userId&quot;: 1,&quot;id&quot;: 1,&quot;title&quot;: &quot;delectus aut autem&quot;,&quot;completed&quot;: false }" time="0"/>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="And match $.userId == 1" time="0"/>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="And match $ contains {&quot;userId&quot;: 1}" time="0.001"/>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="And match $ == { &quot;userId&quot;: #notnull,&quot;id&quot;: 1,&quot;title&quot;: &quot;delectus aut autem&quot;,&quot;completed&quot;: false }" time="0"/>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="And assert response.length == 1" time="0.003">
-    <error message="assert evaluated to false: response.length == 1" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: assert evaluated to false: response.length == 1
-	at com.intuit.karate.StepDefs.handleFailure(StepDefs.java:551)
-	at com.intuit.karate.StepDefs.asssertBoolean(StepDefs.java:330)
-	at ✽.And assert response.length == 1(com/synoku/karate/sample.feature:16)
-</error>
-    <system-out>22:23:34.805 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
-22:23:34.824 [main] ERROR com.intuit.karate - assertion failed: assert evaluated to false: response.length == 1
-</system-out>
-  </testcase>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="Scenario: Testing the exact response of a GET endpoint" time="0.004">
-    <error message="assert evaluated to false: response.length == 1" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: assert evaluated to false: response.length == 1
-	at com.intuit.karate.StepDefs.handleFailure(StepDefs.java:551)
-	at com.intuit.karate.StepDefs.asssertBoolean(StepDefs.java:330)
-	at ✽.And assert response.length == 1(com/synoku/karate/sample.feature:16)
-</error>
-  </testcase>
-  <testcase classname="Scenario: Testing the exact response of a GET endpoint" name="And match response[0].title == &quot;delectus aut autem&quot;" time="0.004">
+  <testcase classname="Scenario: Create Post Call" name="Given url &apos;https://jsonplaceholder.typicode.com/posts&apos;" time="0.003"/>
+  <testcase classname="Scenario: Create Post Call" name="And request { title: &apos;foo&apos;, body: &apos;bar&apos;, userId: 1}" time="0.001"/>
+  <testcase classname="Scenario: Create Post Call" name="When method POST" time="0.001"/>
+  <testcase classname="Scenario: Create Post Call" name="Then status 201" time="0"/>
+  <testcase classname="Scenario: Create Post Call" name="* def resi = response" time="0"/>
+  <testcase classname="Scenario: Create Post Call" name="* print &apos;res:&apos;, resi" time="0.001"/>
+  <testcase classname="Scenario: Create Post Call" name="And match response contain { id: &apos;#notnull&apos; }" time="0.003">
     <skipped/>
   </testcase>
+  <testcase classname="Scenario: Create Post Call" name="Scenario: Create Post Call" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Create Post Call" name="Scenario: Create Post Call" time="0.004"/>
 </testsuite>

@@ -15,6 +15,12 @@
 	    <artifactId>karate-junit4</artifactId>
 	    <version>0.6.0</version>
 	</dependency>
+	<dependency>
+	    <groupId>net.masterthought</groupId>
+	    <artifactId>cucumber-reporting</artifactId>
+	    <version>3.8.0</version>
+	    <scope>test</scope>
+	</dependency>
   </dependencies>
   <build>
         <testResources>

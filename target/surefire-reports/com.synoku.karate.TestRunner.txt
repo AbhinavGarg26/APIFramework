@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.synoku.karate.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 3.384 sec <<< FAILURE!
-And assert response.length == 1(Scenario: Testing the exact response of a GET endpoint)  Time elapsed: 0.003 sec  <<< ERROR!
-com.intuit.karate.exception.KarateException: assert evaluated to false: response.length == 1
-	at com.intuit.karate.StepDefs.handleFailure(StepDefs.java:551)
-	at com.intuit.karate.StepDefs.asssertBoolean(StepDefs.java:330)
-	at ✽.And assert response.length == 1(com/synoku/karate/sample.feature:16)
-
-Scenario: Testing the exact response of a GET endpoint  Time elapsed: 0.004 sec  <<< ERROR!
-com.intuit.karate.exception.KarateException: assert evaluated to false: response.length == 1
-	at com.intuit.karate.StepDefs.handleFailure(StepDefs.java:551)
-	at com.intuit.karate.StepDefs.asssertBoolean(StepDefs.java:330)
-	at ✽.And assert response.length == 1(com/synoku/karate/sample.feature:16)
-
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 7.228 sec
