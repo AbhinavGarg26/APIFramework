@@ -41,5 +41,5 @@ When method GET
 Then status 200
 Given def JavaDemo = Java.type('com.synoku.javacode.JavaDemo')
 When def res = response
-And def result = JavaDemo.doWorkStatic(res	)
+And def result = JavaDemo.doWorkStatic(res)
 Then print result
