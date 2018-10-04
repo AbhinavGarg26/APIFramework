@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="com.synoku.karate.TestRunner" time="0.003" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="com.synoku.karate.TestRunner" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/abhinavgarg/Documents/java projects/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1337368476078640189.tmp"/>
+    <property name="classworlds.conf" value="/Users/abhinavgarg/Documents/java projects/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7577989371111307397.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/abhinavgarg/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -67,7 +67,7 @@
   <testcase classname="Scenario: Printing the exact response of a GET endpoint" name="Then status 200" time="0"/>
   <testcase classname="Scenario: Printing the exact response of a GET endpoint" name="Given def JavaDemo = Java.type(&apos;com.synoku.javacode.JavaDemo&apos;)" time="0"/>
   <testcase classname="Scenario: Printing the exact response of a GET endpoint" name="When def res = response" time="0"/>
-  <testcase classname="Scenario: Printing the exact response of a GET endpoint" name="And def result = JavaDemo.doWorkStatic(res)" time="0"/>
+  <testcase classname="Scenario: Printing the exact response of a GET endpoint" name="And def result = JavaDemo.doWorkStatic(res	)" time="0"/>
   <testcase classname="Scenario: Printing the exact response of a GET endpoint" name="Then print result" time="0"/>
-  <testcase classname="Scenario: Printing the exact response of a GET endpoint" name="Scenario: Printing the exact response of a GET endpoint" time="0.001"/>
+  <testcase classname="Scenario: Printing the exact response of a GET endpoint" name="Scenario: Printing the exact response of a GET endpoint" time="0"/>
 </testsuite>
