@@ -1,6 +1,6 @@
 Feature: Sample feature
 
-@simpleget @ignore
+@simpleget
 Scenario: Testing valid GET endpoint
 Given url 'https://jsonplaceholder.typicode.com/todos/1'
 When method GET
@@ -33,3 +33,13 @@ When method POST
 Then status 201
 * def resi = response
 * print 'res:', resi
+
+ @invokejavacode
+Scenario: Printing the exact response of a GET endpoint
+Given url 'https://jsonplaceholder.typicode.com/todos/1'
+When method GET
+Then status 200
+Given def JavaDemo = Java.type('com.synoku.javacode.JavaDemo')
+When def res = response
+And def result = JavaDemo.doWorkStatic(res)
+Then print result

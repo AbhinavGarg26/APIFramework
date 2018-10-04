@@ -1,4 +1,4 @@
-package apiframework;
+package com.synoku.utility;
 
 import java.io.FileReader;
 import java.io.IOException;

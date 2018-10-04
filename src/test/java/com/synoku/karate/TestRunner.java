@@ -6,13 +6,13 @@ import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
 import com.intuit.karate.junit4.Karate;
+import com.synoku.utility.Utilities;
 import com.vimalselvam.cucumber.listener.Reporter;
 
-import apiframework.Utilities;
 import cucumber.api.CucumberOptions;
 
 @RunWith(Karate.class)
-@CucumberOptions(features = "classpath:com/synoku/karate/sample.feature", tags = "@simpleget" ,
+@CucumberOptions(features = "classpath:com/synoku/karate/sample.feature", tags = "@invokejavacode" ,
 				glue= {"stepDefinitions"} ,
 				plugin = { "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"} ,
 				monochrome = true
@@ -23,6 +23,7 @@ public class TestRunner {
 	
 	@AfterClass
 	public static void writeExtentReport() {
+		
 		Reporter.loadXMLConfig(new File(Utilities.getInstance().getReportConfigPath()));
 		Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
 	    Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
