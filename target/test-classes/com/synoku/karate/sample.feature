@@ -1,6 +1,6 @@
 Feature: Sample feature
 
-@ignore
+@simpleget @ignore
 Scenario: Testing valid GET endpoint
 Given url 'https://jsonplaceholder.typicode.com/todos/1'
 When method GET
@@ -33,4 +33,3 @@ When method POST
 Then status 201
 * def resi = response
 * print 'res:', resi
-And match response contain { id: '#notnull' }

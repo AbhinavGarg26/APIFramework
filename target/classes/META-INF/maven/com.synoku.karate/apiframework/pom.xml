@@ -16,9 +16,14 @@
 	    <version>0.6.0</version>
 	</dependency>
 	<dependency>
-	    <groupId>net.masterthought</groupId>
-	    <artifactId>cucumber-reporting</artifactId>
-	    <version>3.8.0</version>
+	    <groupId>com.vimalselvam</groupId>
+	    <artifactId>cucumber-extentsreport</artifactId>
+	    <version>3.1.1</version>
+	</dependency>
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>3.1.5</version>
 	    <scope>test</scope>
 	</dependency>
   </dependencies>
